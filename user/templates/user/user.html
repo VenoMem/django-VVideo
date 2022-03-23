@@ -6,7 +6,7 @@
 
 {% block content %}
 
-    <div>
+    <main>
         <div>
             <h2>{{ user.username }}</h2>
             <p>{{ user.email }}</p>
@@ -15,12 +15,12 @@
             {% csrf_token %}
             <fieldset>
                 <legend>Profile Info</legend>
-                {{ user_form }}
+                {{ updated_form.as_p }}
             </fieldset>
             <div>
                 <button type="submit">Update</button>
             </div>
         </form>
-    </div>
+    </main>
 
 {% endblock content %}
