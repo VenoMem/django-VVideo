@@ -1,0 +1,24 @@
+{% extends 'video/layout.html' %}
+{% load static %}
+
+{% block extra-header %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/new-video.css'%}">
+{% endblock extra-header %}
+
+
+{% block content %}
+
+    <main>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset>
+                <legend>New Video</legend>
+                {{ form.as_p }}
+            </fieldset>
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+    </main>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+@import url(base.css);
+
+body {
+    background-color: black;
+}
+
+nav a {
+    color: white;
+}
+
+hr {
+    border: 2px solid white;
+}
+
+img {
+    width: 100%;
+}

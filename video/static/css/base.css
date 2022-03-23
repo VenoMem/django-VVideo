@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&family=Roboto:wght@100;400&display=swap');
+
+:root {
+    --zinc1: #18181b;
+    --zinc6: #27272a;
+    --zinc2: #3f3f46;
+    --zinc3: #71717a;
+    --zinc4: #d4d4d8;
+    --zinc5: #f4f4f5;
+    
+
+    --highlight: #fd7e14;
+    --warning: #dc2626;
+    --info: #2563eb;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--zinc1);
+    font-family: 'Roboto', sans-serif;
+    color: var(--zinc4);
+}
+
+
+/* NAVIGATION STYLING */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    font-size: 7rem;
+    text-decoration: none;
+    color: var(--zinc4);
+    margin: 1rem;
+    padding: 1rem 4rem;
+}
+
+.nav-name{
+    margin-right: auto;
+    color: var(--highlight);
+}
+
+.nav-links:hover{
+    background-color: var(--zinc6);
+    color: var(--highlight);
+    border-radius: 2rem;
+}
+
+hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border: 2px solid var(--zinc4);
+    border-radius: 1px;
+}
+
+
+/* FOOTER STYLING */
+
+footer {
+    bottom : 0;
+    width: 100%;
+    font-size: 1.6rem;
+    font-variant: small-caps;
+    text-align: center;
+}

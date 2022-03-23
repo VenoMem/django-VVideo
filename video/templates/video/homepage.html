@@ -1,0 +1,15 @@
+{% extends 'video/layout.html' %}
+{% load static %}
+
+{% block extra-header %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css'%}">
+{% endblock extra-header %}
+
+
+{% block content %}
+
+    <section class="hero-section">
+        <img src="{% static 'img/logo.jpg' %}" alt="Logo on front page">
+    </section>
+
+{% endblock content %}

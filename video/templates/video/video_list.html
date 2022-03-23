@@ -1,0 +1,25 @@
+{% extends 'video/layout.html' %}
+{% load static %}
+
+{% block extra-header %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/video-list.css'%}">
+{% endblock extra-header %}
+
+{% block content %}
+
+    <main>
+    {% for video in videos %}
+        <div>
+            <fieldset>
+                <legend><a href="{% url 'video:video-detail' video.id %}">{{ video.title }}</a></legend>
+                <p>{{ video.date_posted }}</p>
+                <video controls>
+                    <source src="{{ video.video.url }}">
+                </video>
+            </fieldset>
+        </div>
+        {% endfor %}
+    </main>
+
+
+{% endblock content %}
