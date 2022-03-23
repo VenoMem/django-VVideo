@@ -17,8 +17,8 @@
                 </video>
                 {% if object.author == user %}
                     <div>
-                        <a href="{% url 'video:video-update' object.id %}">Update</a>
-                        <a href="{% url 'video:video-delete' object.id %}">Delete</a>
+                        <a href="{% url 'video:video_update' object.id %}">Update</a>
+                        <a href="{% url 'video:video_delete' object.id %}">Delete</a>
                     </div>
                 {% endif %}
                 <p>{{ object.date_posted }}</p>

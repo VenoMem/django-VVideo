@@ -2,8 +2,8 @@
     <nav>
         <a class="nav-name" href="{% url 'video:homepage' %}">V-Video</a>
         {% if user.is_authenticated %}
-            <a class="nav-links" href="{% url 'video:video-list' %}">Library</a>
-            <a class="nav-links" href="{% url 'video:video-create' %}">New Video</a>
+            <a class="nav-links" href="{% url 'video:video_list' %}">Library</a>
+            <a class="nav-links" href="{% url 'video:video_create' %}">New Video</a>
             <a class="nav-links" href="{% url 'user' %}">{{ user.username }}</a>
             <a class="nav-links" href="{% url 'logout' %}">Logout</a>
         {% else %}

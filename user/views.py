@@ -10,7 +10,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect("video:video-list")
+            return redirect("video:video_list")
     else:
         form = UserRegistrationForm()
     return render(request, "user/register.html", {"form": form})
