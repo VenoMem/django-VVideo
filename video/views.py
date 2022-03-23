@@ -51,6 +51,7 @@ class VideoUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
+        #form.instance.video = self.request.FILES['video']
         return super().form_valid(form)
 
     def test_func(self):
