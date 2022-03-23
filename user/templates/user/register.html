@@ -1,0 +1,23 @@
+{% extends 'video/layout.html' %}
+
+{% block extra-header %}
+
+{% endblock extra-header %}
+
+{% block content %}
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset>
+                <legend>Join Today</legend>
+                {{ form }}
+            </fieldset>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div>
+            <p><small>Already have an account?<a href="{% url 'login' %}">Sign In</a></small></p>
+        </div>
+    </div>
+{% endblock content %}

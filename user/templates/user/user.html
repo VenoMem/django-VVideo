@@ -1,0 +1,26 @@
+{% extends 'video/layout.html' %}
+
+{% block extra-header %}
+
+{% endblock extra-header %}
+
+{% block content %}
+
+    <div>
+        <div>
+            <h2>{{ user.username }}</h2>
+            <p>{{ user.email }}</p>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset>
+                <legend>Profile Info</legend>
+                {{ user_form }}
+            </fieldset>
+            <div>
+                <button type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}

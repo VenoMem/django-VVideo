@@ -21,7 +21,7 @@ def register(request):
 
 
 @login_required
-def profile(request):
+def user(request):
     if request.method == "POST":
         updated_form = UserUpdateForm(request.POST, instance=request.user)
         if updated_form.is_valid():
@@ -31,4 +31,4 @@ def profile(request):
     else:
         updated_form = UserUpdateForm(instance=request.user)
 
-    return render(request, "user/user.html", {'updated_form': updated_form})
+    return render(request, "user/user.html", {'updated_form':updated_form})
