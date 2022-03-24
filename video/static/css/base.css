@@ -1,73 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&family=Roboto:wght@100;400&display=swap');
 
 :root {
-    --zinc1: #18181b;
-    --zinc6: #27272a;
-    --zinc2: #3f3f46;
-    --zinc3: #71717a;
-    --zinc4: #d4d4d8;
-    --zinc5: #f4f4f5;
-    
+    --col1: #334155;
+    --col2: #becce5;
+    --col3: #f1f1e6;
+    --col4: #bb881e;
 
-    --highlight: #fd7e14;
-    --warning: #dc2626;
-    --info: #2563eb;
+    --warning: #dc2626; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--col4);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--zinc1);
-    font-family: 'Roboto', sans-serif;
-    color: var(--zinc4);
+    background: radial-gradient(ellipse at left bottom, #64748B 5%, #475569 25%, #334155 50%, #0F172A 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-
-/* NAVIGATION STYLING */
-
+/* NAVIGATION */
 nav {
     display: flex;
     justify-content: flex-end;
+    font-size: 6rem;
+    margin: 2rem;
+    padding: 1rem;
 }
 
-nav a {
-    font-size: 7rem;
+a {
     text-decoration: none;
-    color: var(--zinc4);
-    margin: 1rem;
-    padding: 1rem 4rem;
+    color: var(--col2);
 }
 
-.nav-name{
-    margin-right: auto;
-    color: var(--highlight);
+.nav-link {
+    padding: 0.5rem;
+    margin: 0 1.5rem;
 }
 
-.nav-links:hover{
-    background-color: var(--zinc6);
-    color: var(--highlight);
-    border-radius: 2rem;
+.nav-link:hover {
+    text-decoration: none;
+    box-shadow: 0 0 0 3px var(--col2);
+    border-radius: 5px;
 }
 
-hr {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    border: 2px solid var(--zinc4);
-    border-radius: 1px;
+/* MAIN */
+main {
+    min-height: 100%;
 }
 
-
-/* FOOTER STYLING */
-
+/* FOOTER */
 footer {
-    bottom : 0;
-    width: 100%;
-    font-size: 1.6rem;
     font-variant: small-caps;
+    font-size: 2rem;
     text-align: center;
+    margin-top: auto;
+    color: var(--col2);
 }

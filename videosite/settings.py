@@ -131,7 +131,7 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = "video:video-list"
+LOGIN_REDIRECT_URL = "video:video_list"
 LOGIN_URL = "login"
 
 

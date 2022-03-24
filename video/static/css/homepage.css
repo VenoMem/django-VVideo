@@ -1,17 +1,18 @@
 @import url(base.css);
 
-body {
-    background-color: black;
+main {
+    margin: auto;
 }
 
-nav a {
-    color: white;
+#main-msg {
+    margin: auto;
+    text-align: center;
+    font-size: 15rem;
+    font-weight: 600;
 }
 
-hr {
-    border: 2px solid white;
-}
-
-img {
-    width: 100%;
+small {
+    font-size: 10rem;
+    font-style: italic;
+    font-weight: 400;
 }
