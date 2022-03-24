@@ -1,23 +1,22 @@
 {% extends 'video/layout.html' %}
+{% load static %}
 
 {% block extra-header %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
 
 {% endblock extra-header %}
 
 {% block content %}
 
     <main>
-        <div>
-            <h2>{{ user.username }}</h2>
-            <p>{{ user.email }}</p>
-        </div>
         <form method="POST">
             {% csrf_token %}
             <fieldset>
-                <legend>Profile Info</legend>
+                <legend>{{ user.username }}</legend>
                 {{ updated_form.as_p }}
             </fieldset>
-            <div>
+            <div class="form-func">
                 <button type="submit">Update</button>
             </div>
         </form>
