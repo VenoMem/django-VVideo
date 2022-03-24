@@ -3,7 +3,7 @@
 :root {
     --col1: #334155;
     --col2: #becce5;
-    --col3: #f1f1e6;
+    --col3: #dae7fd;
     --col4: #bb881e;
     --col5: #dba52f;
 
@@ -52,8 +52,8 @@ a {
 
 .nav-link:hover {
     text-decoration: none;
-    box-shadow: 0 0 0 3px var(--col2);
-    border-radius: 5px;
+    color: var(--col3);
+    text-shadow: 0 0 0 1px var(--col3);
 }
 
 
@@ -129,6 +129,11 @@ button:hover {
     color: var(--col2);
     padding-bottom: 0.5rem;
     margin-left: 1.5rem;
+}
+
+.form-func a:hover {
+    color: var(--col3);
+    text-shadow: 0 0 0 1px var(--col3);
 }
 
 /* Additional */
