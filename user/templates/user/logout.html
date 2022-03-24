@@ -2,17 +2,14 @@
 {% load static %}
 
 {% block extra-header %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/logout.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
 {% endblock extra-header %}
 
 
 {% block content %}
 
     <main>
-        <h2>You have been logged out</h2>
-        <div class="logout-link">
-            <a href="{% url 'login' %}">Log In Again</a>
-        </div>
+        <p>You have been logged out. <a href="{% url 'login' %}">Log In Again</a></p>
     </main>
 
 {% endblock content %}
