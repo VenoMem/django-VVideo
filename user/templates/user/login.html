@@ -9,19 +9,17 @@
 {% block content %}
 
     <main>
-        <div class="login-field">
-            <form method="POST">
-            {% csrf_token %}
-                <fieldset>
-                    <legend>Log In</legend>
-                    {{ form.as_p }}
-                </fieldset>
-                <div class="btn">
-                    <button type="submit">Log In</button>
-                    <a href="{% url 'password_reset' %}">Forgot Password?</a>
-                </div>
-            </form>
-        <div>
+        <form method="POST">
+        {% csrf_token %}
+            <fieldset>
+                <legend>Log In</legend>
+                {{ form.as_p }}
+            </fieldset>
+            <div class="form-func">
+                <button type="submit">Log In</button>
+                <a href="{% url 'password_reset' %}">Forgot Password?</a>
+            </div>
+        </form>
     </main>
 
 

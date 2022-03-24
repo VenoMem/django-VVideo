@@ -1,7 +1,8 @@
 {% extends 'video/layout.html' %}
+{% load static %}
 
 {% block extra-header %}
-
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css'%}">
 {% endblock extra-header %}
 
 
@@ -14,7 +15,7 @@
             <legend>Join Today</legend>
             {{ form.as_p }}
         </fieldset>
-        <div>
+        <div class="form-func">
             <button type="submit">Sign Up</button>
         </div>
     </form>

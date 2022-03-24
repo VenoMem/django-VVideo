@@ -5,6 +5,7 @@
     --col2: #becce5;
     --col3: #f1f1e6;
     --col4: #bb881e;
+    --col5: #dba52f;
 
     --warning: #dc2626; 
 }
@@ -23,11 +24,12 @@ html {
 }
 
 body {
-    background: radial-gradient(ellipse at left bottom, #64748B 5%, #475569 25%, #334155 50%, #0F172A 100%);
+    background: radial-gradient(ellipse at right bottom, #64748B 5%, #475569 25%, #334155 50%, #0F172A 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 
 /* NAVIGATION */
 nav {
@@ -54,10 +56,12 @@ a {
     border-radius: 5px;
 }
 
+
 /* MAIN */
 main {
     min-height: 100%;
 }
+
 
 /* FOOTER */
 footer {
@@ -66,4 +70,14 @@ footer {
     text-align: center;
     margin-top: auto;
     color: var(--col2);
+}
+
+
+/* Additional */
+ul {
+    list-style-type: none;
+}
+
+.helptext, li {
+    font-size: 2rem;
 }

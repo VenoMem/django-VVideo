@@ -3,72 +3,62 @@
 main {
     padding: 3rem;
     margin: 5rem;
-}
-
-.login-field{
-    width: 50vw;
-    margin: auto;
+    color: var(--col4);
 }
 
 form {
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 4rem;
-    background-color: var(--zinc6);
-
-    border: 1px solid var(--zinc4);
-    border-radius: 1rem;
 }
 
 fieldset {
     border: 0;
+    margin: 0.5rem;
+    padding: 1rem;
 }
 
 legend {
     font-size: 6rem;
-    border-bottom: 2px solid var(--zinc4);
-    color: var(--highlight);
-    margin-left: 1rem;
-    margin-top: 2rem;
+    font-weight: 700;
 }
 
-input[type=text], input[type=password]{
+label {
+    font-size: 4rem;
     display: block;
-    width: 100%;
+    padding-top: 1rem;
+}
+
+input[type=text], input[type=password], input[type=email]{
+    display: block;
+    width: 60%;
     height: 6rem;
     font-size: 4rem;
-    margin-top: 3px;
+}
+
+.form-func {
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
 }
 
 button {
-    display: block;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
     font-size: 4rem;
-    color: var(--zinc6);
-    background-color: var(--zinc5);
-    border: 1px solid var(--zinc6);
-    border-radius: 5px;
+    background-color: var(--col4);
+    border: none;
+    color: var(--col1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
 }
 
-button:hover{
-    background-color: var(--zinc6);
-    color: var(--zinc5);
-    border: 1px solid var(--zinc5);
-    border-radius: 5px;
-    box-shadow: 0 0 1px 2px var(--zinc5);
+button:hover {
+    background-color: var(--col5);
+    box-shadow: 0 0 0 1px var(--col5);
 }
 
-.btn {
-    display: flex;
-}
-
-.btn a {
-    display: inline;
+.form-func a {
     font-size: 2rem;
-    margin-left: 2rem;
-    padding-top: 1.7rem;
-    height: 5rem;
-    text-decoration: none;
-    color: var(--info);
+    color: var(--col2);
+    padding-bottom: 0.5rem;
+    margin-left: 1.5rem;
 }
