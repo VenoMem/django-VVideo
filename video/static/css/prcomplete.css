@@ -1,0 +1,15 @@
+@import url(base.css);
+
+main p {
+    margin: 0.5rem;
+    font-size: 4rem;
+}
+
+p a {
+    margin-left: 1rem;
+}
+
+p a:hover {
+    color: var(--col3);
+    text-shadow: 0 0 0 1px var(--col3);
+}

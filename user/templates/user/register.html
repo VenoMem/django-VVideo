@@ -2,24 +2,26 @@
 {% load static %}
 
 {% block extra-header %}
+
     <link rel="stylesheet" type="text/css" href="{% static 'css/register.css'%}">
+
 {% endblock extra-header %}
 
 
 {% block content %}
 
-<main>
-    <form method="POST">
-        {% csrf_token %}
-        <fieldset>
-            <legend>Join Today</legend>
-            {{ form.as_p }}
-        </fieldset>
-        <div class="form-func">
-            <button type="submit">Sign Up</button>
-            <p>Already have an account?<a href="{% url 'login' %}">Sign In</a></p>
-        </div>
-    </form>
-</main>
+    <main>
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset>
+                <legend>Join Today</legend>
+                {{ form.as_p }}
+            </fieldset>
+            <div class="form-func">
+                <button type="submit">Sign Up</button>
+                <p>Already have an account?<a href="{% url 'login' %}">Sign In</a></p>
+            </div>
+        </form>
+    </main>
 
 {% endblock content %}

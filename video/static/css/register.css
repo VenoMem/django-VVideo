@@ -1,10 +1,5 @@
 @import url(base.css);
 
-main {
-    padding: 3rem;
-    margin: 5rem;
-}
-
 p {
     margin: 0.5rem;
     font-size: 2rem;

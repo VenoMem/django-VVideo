@@ -60,6 +60,8 @@ a {
 /* MAIN */
 main {
     min-height: 100%;
+    padding: 3rem;
+    margin: 5rem;
 }
 
 
