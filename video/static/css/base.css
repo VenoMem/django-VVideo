@@ -134,8 +134,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--col5);
-    box-shadow: 0 0 0 1px var(--col5);
+    color: var(--col3);
 }
 
 .form-func a {
@@ -157,4 +156,8 @@ ul {
 
 .helptext, li {
     font-size: 2rem;
+}
+
+.warning {
+    background-color: var(--warning);
 }
