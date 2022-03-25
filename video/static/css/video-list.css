@@ -9,26 +9,22 @@ main {
 fieldset {
     margin: 5rem 20rem 10rem 20rem;
     border-radius: 2rem;
-    background-color: var(--zinc6);
-    border: 2px solid var(--zinc3);
-    box-shadow: 0 0 5rem 1rem var(--zinc3);
 }
 
 legend {
     margin: auto;
-    background-color: var(--zinc6);
+    padding: 0.5rem;
     border-radius: 2rem;
-    border: 2px solid var(--zinc3);
 }
 
 legend a {
     font-size: 6rem;
-    color: var(--highlight);
+    color: var(--col4);
     text-decoration: none;
 }
 
-legend:hover {
-    border: 2px solid var(--zinc4);
+legend a:hover {
+    color: var(--col5);
 }
 
 video {
@@ -36,9 +32,5 @@ video {
     margin: auto;
     border-radius: 2rem;
     margin-bottom: 1rem;
-}
-
-p {
-    text-align: center;
-    font-size: 2.5rem;
+    border: 1px solid var(--col6);
 }

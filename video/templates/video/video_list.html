@@ -12,7 +12,6 @@
         <div>
             <fieldset>
                 <legend><a href="{% url 'video:video_detail' video.id %}">{{ video.title }}</a></legend>
-                <p>{{ video.date_posted }}</p>
                 <video controls>
                     <source src="{{ video.video.url }}">
                 </video>
