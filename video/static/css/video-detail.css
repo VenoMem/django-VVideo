@@ -1,0 +1,61 @@
+@import url(base.css);
+
+legend {
+    margin: auto;
+}
+
+video {
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--col6);
+}
+
+.details {
+    width: 50vw;
+    margin: auto;
+    font-size: 3rem;
+    color: var(--col2);
+}
+
+.vid-utils {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#vid-auth {
+    margin-right: auto;
+    margin-left: -1rem;
+}
+
+.updt {
+    background-color: var(--col4);
+    color: var(--col1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.del {
+    background-color: var(--warning);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.vid-utils a {
+    color: var(--col1);
+}
+
+.date {
+    font-size: 1.5rem;
+}
+
+.dscrp {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--col1);
+    padding: 1rem;
+    border-radius: 1rem;
+}

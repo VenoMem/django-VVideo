@@ -2,30 +2,32 @@
 {% load static %}
 
 {% block extra-header %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/new-video.css'%}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/video-detail.css'%}">
+
 {% endblock extra-header %}
 
 
 {% block content %}
 
     <main>
-        <div>
-            <fieldset>
-                <legend>{{ object.title }}</legend>
-                <video controls>
-                    <source src="{{ object.video.url }}">
-                </video>
+        <fieldset>
+            <legend>{{ object.title }}</legend>
+            <video controls>
+                <source src="{{ object.video.url }}">
+            </video>
+            <div class="details">
+                <div class="vid-utils form-func">
+                <p id="vid-auth">{{ object.author }}</p>
                 {% if object.author == user %}
-                    <div>
-                        <a href="{% url 'video:video_update' object.id %}">Update</a>
-                        <a href="{% url 'video:video_delete' object.id %}">Delete</a>
-                    </div>
+                    <a class="updt" href="{% url 'video:video_update' object.id %}">Update</a>
+                    <a class="del" href="{% url 'video:video_delete' object.id %}">Delete</a>
                 {% endif %}
-                <p>{{ object.date_posted }}</p>
-                <p>{{ object.description }}</p>
-                <p>{{ object.author }}</p>
-            </fieldset>
-        </div>
+                </div>
+                <p class="date">{{ object.date_posted }}</p>
+                <p class="dscrp">{{ object.description }}</p>
+            </div>
+        </fieldset>
     </main>
 
 {% endblock content %}
