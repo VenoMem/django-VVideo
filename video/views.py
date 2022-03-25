@@ -27,7 +27,7 @@ class VideoCreateView(LoginRequiredMixin, CreateView):
 class VideoListView(LoginRequiredMixin, ListView):
     model = Video
     context_object_name = "videos"
-    ordering = ['date_posted']
+    ordering = ['-date_posted']
 
 
 class VideoDetailView(LoginRequiredMixin, DetailView):
