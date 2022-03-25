@@ -1,5 +1,6 @@
 <header>
     <nav>
+        <a class="nav-link" href="/"><svg width="84" height="84"><circle cx="41" cy="41" r="40" stroke="#9c731f" stroke-width="2" fill="#bb881e"></circle></svg></a>
         {% if user.is_authenticated %}
             <a class="nav-link" href="{% url 'video:video_list' %}">Library</a>
             <a class="nav-link" href="{% url 'video:video_create' %}">New Video</a>
